@@ -1,5 +1,3 @@
-properties([parameters([string(description: 'Enter Tag Name ', name: 'tags')])])
-properties([parameters([string(description: 'Enter Playbook Name ', name: 'playbook')])])
 pipeline{
     agent any
     stages{
