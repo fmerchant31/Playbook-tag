@@ -1,0 +1,17 @@
+---
+- name: Playbook
+  hosts: localhost
+  gather_facts: false
+  become: yes
+  tasks:
+    - name: mkdir task1
+      file:
+        path: /home/devf/Desktop
+        state: directory
+      tags: mkdir
+
+    - name: debug task2
+      debug:
+         msg: "This is debug task"
+      tags: debug
+
