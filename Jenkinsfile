@@ -15,7 +15,7 @@ pipeline{
                     sh "ansible-playbook $params.playbook --tag $params.tags"
                     
                 }
-            }
+             }
         }
     }
 }
