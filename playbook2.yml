@@ -6,12 +6,20 @@
      - debug:
          msg: "This is first task"
        tags: first
+       check_mode: yes
+       diff: yes
      - debug:
          msg: "This is second task"
        tags: second
+       check_mode: yes
+       diff: yes
      - debug:
          msg: "This is third task"
        tags: third
+       check_mode: yes
+       diff: yes
      - debug:
          msg: "This is fourth task"
        tags: fourth
+       check_mode: yes
+       diff: yes
