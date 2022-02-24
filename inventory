@@ -1,4 +1,4 @@
-husain ansible_host=3.110.41.83 
+husain ansible_host=3.110.41.83 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_pass=aws
 
 [aws]
 husain
