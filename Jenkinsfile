@@ -8,6 +8,7 @@ pipeline{
                     url: 'git@github.com:fmerchant31/Playbook-tag.git'
                 sh "chmod 666 testh.pem"
                 sh "ls -lh"
+                sh "ansible all --list-host"
             }
         }
         stage("Playbook"){
