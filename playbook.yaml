@@ -1,0 +1,10 @@
+---
+ - hosts: tag_Region_ap-south-1
+   become: true
+   remote_user: ubuntu    
+   tasks:
+       - name: creating file
+         file:
+           name: helloworld
+           state: touch
+
