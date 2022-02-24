@@ -12,7 +12,7 @@ pipeline{
         stage("Playbook"){
             steps{
                 script{
-                    sh "ansible-playbook $params.playbook"
+                    sh "ansible-playbook -i $params.choice $params.playbook"
                     
                 }
              }
