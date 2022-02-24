@@ -1,5 +1,5 @@
 ---
- - hosts: tag_Region_ap-south-1
+ - hosts: aws
    become: true
    remote_user: ubuntu    
    tasks:
