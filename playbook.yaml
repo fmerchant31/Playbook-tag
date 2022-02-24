@@ -1,0 +1,10 @@
+---
+ - hosts: tag_Name_test
+   become: true
+   remote_user: ubuntu    
+   tasks:
+       - name: creating file
+         file:
+           name: helloworld
+           state: touch
+
