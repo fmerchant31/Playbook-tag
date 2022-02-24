@@ -1,5 +1,5 @@
 ---
- - hosts: aws
+ - hosts: 3.110.41.83
    become: true
    remote_user: ubuntu    
    tasks:
