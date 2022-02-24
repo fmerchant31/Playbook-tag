@@ -9,10 +9,10 @@ pipeline{
                 sh "ls -lh"
             }
         }
-        stage("Playbook with tagname"){
+        stage("Playbook"){
             steps{
                 script{
-                    sh "ansible-playbook $params.playbook --tag $params.tags"
+                    sh "ansible-playbook $params.playbook"
                     
                 }
              }
