@@ -13,7 +13,7 @@ pipeline{
         }
         stage("Playbook"){
             steps{
-                script{
+                 withAWS(credentials: 'aws-credentials'){
                     sh "ansible-playbook $params.playbook"
                     
                 }
