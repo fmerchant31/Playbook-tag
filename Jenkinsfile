@@ -1,4 +1,5 @@
 pipeline{
+    
     agent any
     stages{
         stage('Checkout external proj') {
@@ -10,13 +11,10 @@ pipeline{
                 sh "ls -lh"
             }
         }
-         stage{
-            steps{
-                
+         stage('Jenkins'){
+             steps{
                  withAWS(credentials:'aws-credentials'){
-                    sh "ansible-playbook $params.playbook"
-                    
-                }
+                    sh "ansible-playbook $params.playbook" }
              }
         }
     }
