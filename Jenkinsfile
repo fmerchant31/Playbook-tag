@@ -8,12 +8,9 @@ pipeline{
                     url: 'git@github.com:fmerchant31/Playbook-tag.git'
                 sh "chmod 006 testh.pem"
                 sh "ls -lh"
-                sh "ansible all --list-host"
-            }
-        }
-        stage("Playbook"){
+                sh "ansibleer
             steps{
-                 script{
+                 withAWS(credentials:'aws-credentials'){
                     sh "ansible-playbook $params.playbook"
                     
                 }
