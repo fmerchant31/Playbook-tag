@@ -5,8 +5,7 @@ aws_secret_key: h27wu00fLlKxPNJZM4FvGH27XRzJysh5NbE6a2As
 become: true
 filters:
   tag:Name:
-    - devh
-    - devf
+    - test
   instance-state-name : running
 keyed_groups:
   - key: tags
