@@ -1,0 +1,6 @@
+---
+ - hosts: "{{ hosts }}"
+   become: true
+   remote_user: "{{ username }}"
+   tasks:
+    - action: ping
