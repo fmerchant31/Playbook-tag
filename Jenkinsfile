@@ -9,6 +9,7 @@ pipeline{
                 sh "chmod 006 testh.pem"
                 sh "ls -lh"
             }
+        }
          stage{
             steps{
                 
